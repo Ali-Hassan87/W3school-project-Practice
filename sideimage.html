@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Kai</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f5f2ee;
+      color: #1e1e1e;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      max-width: 700px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      padding: 3rem 2.5rem 2.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+      color: #3a3a3a;
+      margin-bottom: 1.8rem;
+    }
+
+    .intro strong {
+      color: #1a1a1a;
+    }
+
+    .street-photo {
+      width: 100%;
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+      background: #e8e2da;
+    }
+
+    .hobbies-heading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .hobbies-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .hobbies-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.3rem;
+      color: #2a2a2a;
+    }
+
+    .hobbies-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #1a1a1a;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .card {
+        padding: 2rem 1.5rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hi, I'm Kai</h1>
+
+    <p class="intro">
+      I'm a freelance frontend developer based in <strong>Lisbon</strong>, with a
+      background in graphic design. I specialise in <strong>HTML</strong>,
+      <strong>CSS</strong> and <strong>JavaScript</strong>, and I'm currently
+      focused on building learning tools for new coders.
+    </p>
+
+    <!-- Street / alleyway photo placeholder -->
+    <svg class="street-photo" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Narrow old-world street alleyway lined with buildings and foliage">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#b5c9d8"/>
+          <stop offset="60%" stop-color="#d4c9b5"/>
+          <stop offset="100%" stop-color="#c4b8a8"/>
+        </linearGradient>
+        <linearGradient id="wallLeft" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#b8a48c"/>
+          <stop offset="80%" stop-color="#d6c8b6"/>
+          <stop offset="100%" stop-color="#c4b49e"/>
+        </linearGradient>
+        <linearGradient id="wallRight" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#c9b8a4"/>
+          <stop offset="20%" stop-color="#daceba"/>
+          <stop offset="100%" stop-color="#b09878"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Sky -->
+      <rect width="800" height="200" fill="url(#sky)"/>
+
+      <!-- Left building wall -->
+      <rect x="0" y="60" width="260" height="390" fill="url(#wallLeft)" rx="2"/>
+      <rect x="30" y="100" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.5"/>
+      <rect x="100" y="100" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.4"/>
+      <rect x="170" y="100" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.5"/>
+      <rect x="30" y="190" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.3"/>
+      <rect x="100" y="190" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.5"/>
+      <rect x="170" y="190" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.4"/>
+      <rect x="80" y="380" width="70" height="70" rx="4" fill="#8b6f50"/>
+
+      <!-- Right building wall -->
+      <rect x="540" y="70" width="260" height="380" fill="url(#wallRight)" rx="2"/>
+      <rect x="570" y="110" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.5"/>
+      <rect x="640" y="110" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.4"/>
+      <rect x="710" y="110" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.3"/>
+      <rect x="570" y="200" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.4"/>
+      <rect x="640" y="200" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.5"/>
+      <rect x="710" y="200" width="50" height="60" rx="3" fill="#7a8a9a" opacity="0.3"/>
+      <rect x="620" y="380" width="60" height="70" rx="4" fill="#8b6f50"/>
+
+      <!-- Alley ground / cobblestone -->
+      <rect x="250" y="370" width="300" height="80" fill="#9a8b7a" rx="1"/>
+      <rect x="250" y="370" width="300" height="80" fill="url(#wallLeft)" opacity="0.15"/>
+
+      <!-- Distant buildings / end of alley -->
+      <rect x="340" y="180" width="130" height="190" fill="#b8a894" rx="2"/>
+      <rect x="350" y="210" width="25" height="30" rx="2" fill="#7a8a9a" opacity="0.4"/>
+      <rect x="390" y="210" width="25" height="30" rx="2" fill="#7a8a9a" opacity="0.3"/>
+      <rect x="430" y="210" width="25" height="30" rx="2" fill="#7a8a9a" opacity="0.4"/>
+
+      <!-- Foliage / vines -->
+      <ellipse cx="220" cy="140" rx="40" ry="30" fill="#5a7a4a" opacity="0.5"/>
+      <ellipse cx="240" cy="90" rx="30" ry="20" fill="#6a8a5a" opacity="0.4"/>
+      <ellipse cx="200" cy="200" rx="35" ry="25" fill="#5a7a4a" opacity="0.3"/>
+      <ellipse cx="260" cy="160" rx="25" ry="35" fill="#6a8a5a" opacity="0.35"/>
+      <ellipse cx="560" cy="130" rx="30" ry="25" fill="#5a7a4a" opacity="0.45"/>
+      <ellipse cx="580" cy="200" rx="35" ry="20" fill="#6a8a5a" opacity="0.3"/>
+      <ellipse cx="540" cy="90" rx="25" ry="18" fill="#5a7a4a" opacity="0.4"/>
+
+      <!-- Flower box -->
+      <rect x="635" y="162" width="60" height="8" rx="2" fill="#6a4f3a"/>
+      <ellipse cx="645" cy="158" rx="10" ry="8" fill="#7a9a5a" opacity="0.6"/>
+      <ellipse cx="660" cy="155" rx="10" ry="8" fill="#6a8a4a" opacity="0.6"/>
+      <ellipse cx="675" cy="158" rx="10" ry="8" fill="#7a9a5a" opacity="0.5"/>
+
+      <!-- Archway at end -->
+      <path d="M345 370 Q370 340 395 370" fill="#a89880" stroke="none"/>
+    </svg>
+
+    <h2 class="hobbies-heading">Hobbies</h2>
+    <ul class="hobbies-list">
+      <li>Sketching wireframes over a cup of tea</li>
+      <li>Reading about web accessibility and inclusive design</li>
+    </ul>
+  </div>
+</body>
+</html>

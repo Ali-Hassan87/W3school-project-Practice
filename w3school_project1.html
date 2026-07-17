@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3School Project_no_1</title>
+    <link rel="stylesheet" href="w3school_project1.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        * {
+            background: none;
+        }
+
+        body {
+            /* background-color: rgba(122, 233, 200, 0.2); */
+            background:
+                radial-gradient(at 0% 0%, rgb(251, 252, 251) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgb(252, 253, 253) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgb(255, 255, 255) 0px, transparent 50%),
+                #d0f7e8;
+            background-size: 200% 200%;
+            animation: waveBackground 8s ease infinite;
+        }
+        @keyframes waveBackground {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100%}
+            100% {background-position: 0% 50%;}
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #04AA6D;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin: 5px;
+            color: white;
+            font-weight: bold;
+
+            #w3logo {
+                height: 35px;
+                width: auto;
+            }
+
+            li {
+                display: inline;
+                padding-right: 15px;
+                margin: 5px 5px;
+            }
+        }
+
+        nav:hover {
+            background: #025336;
+        }
+
+
+        #pic {
+            height: 350px;
+            width: 350px;
+            position: fixed;
+            top: 25%;
+            right: 25%;
+            box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+        }
+
+        #pic:hover {
+            /* transform: scale(1.1); */
+            box-shadow: 20px 20px 0px rgba(3, 241, 110, 0.15);
+        }
+
+        button.MiddleButton {
+            padding: 7px 10px;
+            font-size: large;
+            color: darkgray;
+            border: none;
+            cursor: pointer;
+        }
+
+        button.MiddleButton:hover {
+            border-bottom: #04AA6D 2px solid;
+            color: #04AA6D;
+        }
+
+        button.MiddleButton:active {
+            border-bottom: #04AA6D 2px solid;
+            color: #04AA6D;
+        }
+
+        button.MiddleButton.active {
+            border-bottom: #04AA6D 2px solid;
+            color: #04AA6D;
+        }
+
+        #customUL {
+            list-style-type: none;
+            padding-left: 30px;
+
+            .customLi {
+                background: url("download.png") no-repeat left center / 16px 16px;
+                padding-left: 35px;
+            }
+        }
+
+        #EndButton {
+            background: #04AA6D;
+            cursor: pointer;
+            border-radius: 5%;
+            font-weight: bold;
+            padding: 15px 20px;
+        }
+
+        #EndButton:hover {
+            background: #03613e;
+            transform: scale(1.02);
+        }
+    </style>
+    <header>
+        <nav>
+            <span style="font-size: 25px;">W3schools <img src="w3logo.png" alt="error 404" id="w3logo"></span>
+            <ul>
+                <li id="items">Home</li>
+                <li id="items">Projects</li>
+                <li id="items">Services</li>
+                <li id="items">Contact</li>
+            </ul>
+        </nav>
+        <h1 style="font-size:xxx-large;">Build your first HTML project, step-by-step</h1>
+        <span>Write your first real HTML page.</span>
+        <br><br>
+        <span>Build a personal bio with formatted text, a list, an image, and links. <a href="sideimage.html"
+                target="_blank"> <img src="Screenshot (101).png" alt="Error 404" id="pic"> </a> </span>
+        <br><br>
+    </header>
+
+
+    <pre>Easy          <b style="color: #04AA6D; ">+70 XP</b>         HTML</pre>
+
+    <br>
+
+    <button class="MiddleButton" onclick="resetbutton(); this.classList.add('active'); "> <img src="3bar_menu_icon.jfif"
+            alt="Image" style="width:25px;height:18px; background-position: center;;">Instructions</button>
+
+    <button class="MiddleButton" onclick="resetbutton(); this.classList.add('active'); "> <img
+            src="questionmark_icon.png" alt="Image" style="width:20px;height:14px; background-position: center;"> How it
+        works</button>
+
+    <hr style="opacity: 0.3; width: 40%; margin-left: 0%;">
+    <br>
+
+    <section>
+        <h3>What you will use in this project</h3>
+        <ul id="customUL">
+            <li class="customLi">Text Formatting</li>
+            <li class="customLi">Lists with &lt;ul&gt; and &lt;li&gt;</li>
+            <li class="customLi">Linking pages with &lt;a&gt;</li>
+            <li class="customLi">Embedding images with &lt;img&gt;</li>
+        </ul>
+    </section>
+
+    <br><br>
+
+    <button id="EndButton"> Start Building Now > </button>
+
+    <br>
+    <p> <small>Opens an embedded code editor. No installs required. </small></p>
+
+
+    <script>
+        function resetbutton() {
+            const butt = document.querySelectorAll('.MiddleButton');
+            butt.forEach(MiddleButton => MiddleButton.classList.remove('active'));
+        }
+        
+        let a = document.body.childNodes[0].childNodes[1].childNodes;
+        console.log(a)
+        let b = document.body.firstElementChild;
+        console.log(b)
+
+       
+    </script>
+
+    </body>
+
+</html>
